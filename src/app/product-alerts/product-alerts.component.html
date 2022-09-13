@@ -1,0 +1,8 @@
+<!--component html goes here 
+
+    ** NOTE ** The notify.emit() goes on this component but the onNotify will go in the parent since
+    it is the one we want to take the action
+-->
+<p *ngIf="product && product.price > 700">
+    <button (click)="notify.emit()">Notify Me</button>
+</p>

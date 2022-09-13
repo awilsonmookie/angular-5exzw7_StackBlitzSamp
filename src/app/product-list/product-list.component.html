@@ -18,4 +18,13 @@ can be found in the LICENSE file at https://angular.io/license
   </p>
 
   <button (click)="share()">Share</button>
+
+  <!-- Makes Product Alert a child of Product List and passes the current product as input to the
+      component using Property Binding 
+  -->
+  <app-product-alerts 
+    [product] = "product"
+    (notify) = "onNotify()">
+  </app-product-alerts>
+
 </div>
